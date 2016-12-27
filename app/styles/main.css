@@ -1,0 +1,175 @@
+
+/* Normalizando */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/* Elementos gerais */
+
+html,
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  background-color: #E8E8E8;
+}
+
+.login{  
+  color: #fff;
+  position: absolute;
+  overflow: hidden;
+  background: url('/images/background-login.png') no-repeat;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+}
+
+.painel{
+    background-color: #0A1F36;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -110px;
+    padding: 25px;
+    color: #FFF;
+} 
+
+.botao,
+.botao:hover,
+.botao:focus,
+.botao:active:hover {
+  background-color: #2a9286;
+  border-color: #2a9286;
+}
+.painel input{
+  height: 48px;
+  width: 300px;
+  padding-right: 40px;
+  border: none;
+  padding: 10px;
+}
+
+.line{
+      margin-top: -20px;
+}
+.form-control {
+  border: none;
+}
+.search {
+  display: flex;
+  padding-top: 65px;
+}
+.search button{
+  margin-left: 10px;
+  max-width: 100px;
+}
+
+.foto {
+    padding: 10px;
+    border-radius: 50%;
+    height: 150px;
+  }
+
+.titulo {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+.fa {
+      margin: 0px 30px;
+}
+
+.img-responsive {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.header{
+  background: url('/images/background-login.png') no-repeat;
+  color: #FFF;   
+  padding: 20px; 
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  text-align: center;
+}
+
+.projeto {
+  margin: 5%;
+}
+.chart-container canvas {
+  height: 250px;
+  width: 100%;
+  background-color: #FFF;
+  color: #000;
+  padding-top: 30px;
+  background-color: #FFF;
+}
+
+.t-center{
+  text-align: center;
+}
+
+.projeto-header {
+
+  font-size: 20px;
+  background-color: #0A1F36;
+  color: #fff;
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.card {
+  box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-bottom: 30px;
+   
+  
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 8px rgba(0,0,0,0.2);
+}
+
+
+@media screen and (min-width: 800px){
+  .painel{
+    padding: 36px;
+  }   
+}
+
+/* IPAD */
+@media screen and (min-height: 1000px) and (min-width: 750px) {
+  .painel {
+    margin-left: -255px;
+    margin-top: -240px;
+    padding: 120px;
+  }
+}
+
+/* IPAD  Landscape */
+@media screen and (min-height: 750px) and (min-width: 1000px) and (orientation:landscape) {
+  .painel {
+    margin-left: -255px;
+    margin-top: -240px;
+    padding: 120px;
+  }
+}
+

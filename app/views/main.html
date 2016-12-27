@@ -1,0 +1,32 @@
+<div class="conteudo">
+  <div class="header card">    
+    <div class="row">
+      <div class="col-sm-4 line">
+        <img ng-src="{{main.foto}}" class="foto">
+      </div>
+      <div class="col-sm-4 line">
+        <h2 class="titulo img-responsive">{{main.usuario}}</h2>
+      </div>
+      <div class="col-sm-4 search line">
+        <input type="text" class="form-control" ng-model="usuario" placeholder="Digite o usuario">
+        <button class="btn btn-primary botao form-control" ng-click="main.pesquisarUsuario(usuario)">Pesqusar</button>
+      </div>
+    </div>
+  </div>
+  <div class="projeto card" ng-repeat="project in main.projects">
+    <div class="projeto-header">
+      <h2> {{project.name}}</h2>
+      <div class="row"> 
+          <i class="fa fa-star" aria-hidden="true"> {{project.stars}} </i>      
+          <i class="fa fa-code-fork" aria-hidden="true"> {{project.forks}}  </i>  
+          <i class="fa fa-users" aria-hidden="true"> {{project.contributors}}  </i>  
+          <i class="fa fa-clock-o" aria-hidden="true"> {{project.commits}}  </i>  
+      </div>   
+    </div>
+      <div class="chart-container">
+        <canvas id="line" class="chart chart-line" chart-data="project.grafico.quantidade" chart-labels="project.grafico.data" chart-series="project.name" chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick">
+        </canvas> 
+      </div> 
+  </div>
+</div>
+
