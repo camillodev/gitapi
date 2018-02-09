@@ -1,4 +1,7 @@
-# gitapi - Aplicacao de teste em angular acessando os dados da API do Github
+# GitAPI 
+Aplicacao de estudo em AngularJS acessando os dados da API do Github.
+Fiz essa aplicação como um teste de avaliação técnica para uma empresa, mesmo não sabendo angular. 
+Aprendi para fazer o projeto e consegui passar nesta fase do processo seletivo. 
 
 
 ## Sofware Necessário
